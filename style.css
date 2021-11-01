@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #08151b;
+}
+
+.container .row {
+    height: 130px;
+    line-height: 130px;
+}
+
+.container label {
+    cursor: pointer;
+    color: #e0e0e0;
+    margin: 0 30px;
+    background: #0f242e;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px #000000;
+    opacity: .4;
+    transition: all .3s;
+}
+
+.container label:hover {
+    opacity: 1;
+    color: #f2f2f2;
+    background: transparent;
+    font-size: 34px;
+    box-shadow: 0 0 10px #0000001a;
+}
+
+input {
+    display: none;
+}
+
+#click1:checked ~ .container .fa-microphone,
+#click2:checked ~ .container .fa-bell,
+#click3:checked ~ .container .fa-volume-up,
+#click4:checked ~ .container .fa-map-marker-alt,
+#click5:checked ~ .container .fa-wifi,
+#click6:checked ~ .container .fa-lock {
+    color: #f2f2f2;
+    opacity: 1;
+    font-size: 30px;
+    box-shadow: 0 0 10px #0000001a;
+    background: linear-gradient(45deg, #0e232e 50%, #132f3d 50%);
+}
